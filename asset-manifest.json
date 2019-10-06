@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/watertree-usa/static/css/main.79694009.chunk.css",
+    "main.js": "/watertree-usa/static/js/main.e98f0189.chunk.js",
+    "main.js.map": "/watertree-usa/static/js/main.e98f0189.chunk.js.map",
+    "runtime-main.js": "/watertree-usa/static/js/runtime-main.a7fbe098.js",
+    "runtime-main.js.map": "/watertree-usa/static/js/runtime-main.a7fbe098.js.map",
+    "static/js/2.6f41a3af.chunk.js": "/watertree-usa/static/js/2.6f41a3af.chunk.js",
+    "static/js/2.6f41a3af.chunk.js.map": "/watertree-usa/static/js/2.6f41a3af.chunk.js.map",
+    "index.html": "/watertree-usa/index.html",
+    "precache-manifest.c844839ce84db42b6a1f71f5fd7f68a6.js": "/watertree-usa/precache-manifest.c844839ce84db42b6a1f71f5fd7f68a6.js",
+    "service-worker.js": "/watertree-usa/service-worker.js",
+    "static/css/main.79694009.chunk.css.map": "/watertree-usa/static/css/main.79694009.chunk.css.map",
+    "static/media/container.png": "/watertree-usa/static/media/container.54933978.png",
+    "static/media/gallon.png": "/watertree-usa/static/media/gallon.74f1f8ee.png",
+    "static/media/pdumbbell.png": "/watertree-usa/static/media/pdumbbell.5cc8161f.png",
+    "static/media/WaterTree.scss": "/watertree-usa/static/media/waterbackground.e7f23b0e.jpg",
+    "static/media/watertreelogo.png": "/watertree-usa/static/media/watertreelogo.a18ad561.png",
+    "static/media/wt-lufe-toothpaste.png": "/watertree-usa/static/media/wt-lufe-toothpaste.e619b650.png",
+    "static/media/wt-mg-ionic.png": "/watertree-usa/static/media/wt-mg-ionic.4ebec589.png",
+    "static/media/wt-mg-oil.png": "/watertree-usa/static/media/wt-mg-oil.d964ba12.png",
+    "static/media/wt-orbs.png": "/watertree-usa/static/media/wt-orbs.1f883c0b.png",
+    "static/media/wt-salt.png": "/watertree-usa/static/media/wt-salt.36b464f7.png",
+    "static/media/wt-shots.png": "/watertree-usa/static/media/wt-shots.69d053a6.png",
+    "static/media/wt-stix.png": "/watertree-usa/static/media/wt-stix.b67d3405.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a7fbe098.js",
+    "static/js/2.6f41a3af.chunk.js",
+    "static/css/main.79694009.chunk.css",
+    "static/js/main.e98f0189.chunk.js"
+  ]
+}

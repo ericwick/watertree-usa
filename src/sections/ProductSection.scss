@@ -1,0 +1,112 @@
+@media screen and (max-width: 500px) {
+	.w-product {
+		background-color: lightblue;
+		padding: 2rem;
+
+		&__our-products {
+			color: #192e6a;
+			font-size: 1.5rem;
+			font-family: 'Libre Baskerville', serif;
+			text-align: center;
+
+			&--paragraph {
+				text-align: center;
+				font-size: 1.1rem;
+				font-family: 'Lato', sans-serif;
+				color: #19155c;
+				line-height: 1.55rem;
+			}
+		}
+
+		&__disclaimer {
+			text-align: center;
+			font-size: 0.25rem;
+			color: #19155c;
+			font-family: 'Lato', sans-serif;
+		}
+	}
+
+	.horizontal-divider {
+		color: #19155c;
+	}
+}
+
+@media screen and (min-width: 1000px) {
+	.w-product {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: lightblue;
+		padding: 7rem 16rem 0;
+
+		&__our-products {
+			color: #192e6a;
+			font-size: 2rem;
+			font-family: 'Libre Baskerville', serif;
+			text-align: center;
+
+			&--paragraph {
+				font-size: 1.25rem;
+				font-family: 'Lato', sans-serif;
+				text-align: center;
+				color: #19155c;
+				padding: 0 5rem;
+				line-height: 1.25;
+			}
+		}
+
+		&__disclaimer {
+			text-align: center;
+			font-size: 0.25rem;
+			color: #19155c;
+			line-height: 0.5rem;
+			font-family: 'Lato', sans-serif;
+		}
+	}
+
+	.horizontal-divider {
+		width: 20rem;
+		color: #19155c;
+	}
+}
+
+@media screen and (max-width: 999px) and (min-width: 501px) {
+	.w-product {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: lightblue;
+		padding: 7rem 0 0;
+
+		&__our-products {
+			color: #192e6a;
+			font-size: 2rem;
+			font-family: 'Libre Baskerville', serif;
+			text-align: center;
+
+			&--paragraph {
+				font-size: 1.25rem;
+				font-family: 'Lato', sans-serif;
+				text-align: center;
+				color: #19155c;
+				padding: 0 2rem;
+				line-height: 1.25;
+			}
+		}
+
+		&__disclaimer {
+			text-align: center;
+			font-size: 0.25rem;
+			color: #19155c;
+			line-height: 0.5rem;
+			font-family: 'Lato', sans-serif;
+		}
+	}
+
+	.horizontal-divider {
+		width: 20rem;
+		color: #19155c;
+	}
+}

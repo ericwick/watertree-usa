@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/watertree-usa/precache-manifest.72fcd2f1de31eb2b3b77f130061df2fa.js"
+  "/watertree-usa/precache-manifest.c844839ce84db42b6a1f71f5fd7f68a6.js"
 );
 
 self.addEventListener('message', (event) => {

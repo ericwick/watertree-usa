@@ -64,6 +64,7 @@ export default class Section extends React.Component {
 
 		let value = document.documentElement.scrollTop,
 			max,
+			// eslint-disable-next-line
 			percent;
 
 		max = docHeight - winHeight;

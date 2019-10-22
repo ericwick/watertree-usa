@@ -27,7 +27,7 @@ const Products = () => {
 					</p>
 					<p className='w-products__card--description--p'>
 						This portable Silver Power Stick has many uses and is portable so you can take it with you everywhere you go. You
-						can even use them aronnd the house because of a new addition to what this little dynamo will do. It will create
+						can even use them around the house because of a new addition to what this little dynamo will do. It will create
 						Alkaline Antioxidant water, but the new version will also create anti-bacterial water when it is left in the water
 						for more than an hour. This creates a whole new product for you to benefit from. You can clean this with water, and
 						you can use them to wash your skin and much more. The best part is that you can still drink the water and there is

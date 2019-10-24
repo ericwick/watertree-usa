@@ -77,6 +77,8 @@
 		&__flex {
 			display: flex;
 			flex-direction: row;
+			justify-content: center;
+			align-items: center;
 			width: 100%;
 
 			&--container {
@@ -107,6 +109,10 @@
 			font-family: 'Lato', sans-serif;
 			line-height: 1.85;
 			padding: 0 3rem;
+
+			&--paragraph {
+				padding-bottom: 5px;
+			}
 		}
 
 		&__list {

@@ -75,6 +75,71 @@
 				}
 			}
 		}
+		&__prices {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: -4rem 0 2rem;
+
+			&--table-title {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				font-size: 1.15rem;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				line-height: 1.75rem;
+				padding: 2rem 0 0;
+				color: #192e6a;
+			}
+
+			&--table {
+				position: relative;
+				border-collapse: collapse;
+				border-spacing: 0;
+				border: 1px solid #192e6a;
+				color: rgba(41, 93, 47, 1);
+
+				&--header {
+					text-align: center;
+				}
+				&--body {
+					text-align: center;
+				}
+				&--row {
+					border-bottom: 1px solid #192e6a;
+
+					& td {
+						font-weight: 600;
+					}
+
+					&--title {
+						padding: 10px;
+						color: #192e6a;
+					}
+
+					&--bpa {
+						padding: 5px;
+						color: rgba(41, 93, 47, 1);
+					}
+
+					&__head {
+						border-right: 1px solid #192e6a;
+						padding: 10px;
+						color: #192e6a;
+					}
+					&__header {
+						border-bottom: 1px solid #192e6a;
+						padding: 0 20px;
+					}
+					&__empty {
+						background-color: #192e6a;
+					}
+				}
+			}
+		}
 
 		&__logo {
 			height: 1rem;
@@ -212,6 +277,72 @@
 					padding: 0 2rem;
 					color: #192e6a;
 					margin: 1rem 0;
+				}
+			}
+		}
+
+		&__prices {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: -4rem 0 2rem;
+
+			&--table-title {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				font-size: 1.15rem;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				line-height: 1.75rem;
+				padding: 2rem 0 0;
+				color: #192e6a;
+			}
+
+			&--table {
+				position: relative;
+				border-collapse: collapse;
+				border-spacing: 0;
+				border: 1px solid #192e6a;
+				color: rgba(41, 93, 47, 1);
+
+				&--header {
+					text-align: center;
+				}
+				&--body {
+					text-align: center;
+				}
+				&--row {
+					border-bottom: 1px solid #192e6a;
+
+					& td {
+						font-weight: 600;
+					}
+
+					&--title {
+						padding: 10px;
+						color: #192e6a;
+					}
+
+					&--bpa {
+						padding: 10px;
+						color: rgba(41, 93, 47, 1);
+					}
+
+					&__head {
+						border-right: 1px solid #192e6a;
+						padding: 10px;
+						color: #192e6a;
+					}
+					&__header {
+						border-bottom: 1px solid #192e6a;
+						padding: 0 20px;
+					}
+					&__empty {
+						background-color: #192e6a;
+					}
 				}
 			}
 		}
@@ -357,6 +488,72 @@
 					padding: 0 2rem;
 					color: #192e6a;
 					margin: 1rem 0;
+				}
+			}
+		}
+
+		&__prices {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			margin: -4rem 0 2rem;
+
+			&--table-title {
+				display: flex;
+				justify-content: center;
+				text-align: center;
+				font-size: 1.15rem;
+				font-family: 'Poppins', sans-serif;
+				font-weight: 600;
+				line-height: 1.75rem;
+				padding: 2rem 0 0;
+				color: #192e6a;
+			}
+
+			&--table {
+				position: relative;
+				border-collapse: collapse;
+				border-spacing: 0;
+				border: 1px solid #192e6a;
+				color: rgba(41, 93, 47, 1);
+
+				&--header {
+					text-align: center;
+				}
+				&--body {
+					text-align: center;
+				}
+				&--row {
+					border-bottom: 1px solid #192e6a;
+
+					& td {
+						font-weight: 600;
+					}
+
+					&--title {
+						padding: 10px;
+						color: #192e6a;
+					}
+
+					&--bpa {
+						padding: 10px;
+						color: rgba(41, 93, 47, 1);
+					}
+
+					&__head {
+						border-right: 1px solid #192e6a;
+						padding: 10px;
+						color: #192e6a;
+					}
+					&__header {
+						border-bottom: 1px solid #192e6a;
+						padding: 0 20px;
+					}
+					&__empty {
+						background-color: #192e6a;
+					}
 				}
 			}
 		}

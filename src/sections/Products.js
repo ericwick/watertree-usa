@@ -175,6 +175,104 @@ const Products = () => {
 					<p className='w-products__card--description--container-p'>Also bring your own containers and fill up by the gallon!</p>
 				</div>
 			</div>
+			<div className='w-products__prices'>
+				{/* REFILLS */}
+				<p className='w-products__prices--table-title'>Refills &#40;per gallon&#41;</p>
+				<table className='w-products__prices--table'>
+					<thead className='w-products__prices--table--header'>
+						<tr className='w-products__prices--table--row'>
+							<th />
+							<th className='w-products__prices--table--row--title'>Price &#40;per gallon&#41;</th>
+							<th className='w-products__prices--table--row--title'>2.2L Dumbbell</th>
+						</tr>
+					</thead>
+					<tbody className='w-products__prices--table--body'>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>Classic</th>
+							<td>$1</td>
+							<td>50&#162;</td>
+						</tr>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>Premium</th>
+							<td>$2</td>
+							<td>$1</td>
+						</tr>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>Hydro Classic</th>
+							<td>$4</td>
+							<td>$2</td>
+						</tr>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>Hydro Premium</th>
+							<td>$5</td>
+							<td>$2.50</td>
+						</tr>
+					</tbody>
+				</table>
+
+				{/* CASES */}
+				<p className='w-products__prices--table-title'>Cases &#40;24 Bottles&#41;</p>
+				<table className='w-products__prices--table'>
+					<thead className='w-products__prices--table--header'>
+						<tr className='w-products__prices--table--row'>
+							<th />
+							<th className='w-products__prices--table--row--title'>Individual &#40;1-4&#41;</th>
+							<th className='w-products__prices--table--row--title'>Bulk &#40;5+&#41;</th>
+						</tr>
+					</thead>
+					<tbody className='w-products__prices--table--body'>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>Classic</th>
+							<td>$15</td>
+							<td>$12</td>
+						</tr>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>Premium</th>
+							<td>$20</td>
+							<td>$18</td>
+						</tr>
+					</tbody>
+				</table>
+
+				{/* CONTAINERS */}
+				<p className='w-products__prices--table-title'>Containers &#40;Classic 9.5pH Fill-Up&#41;</p>
+				<table className='w-products__prices--table'>
+					<thead className='w-products__prices--table--header'>
+						<tr className='w-products__prices--table--row'>
+							<th />
+							<th className='w-products__prices--table--row--title'>Regular</th>
+							<th className='w-products__prices--table--row--title'>Spout</th>
+							<th className='w-products__prices--table--row--title'>Handle</th>
+						</tr>
+					</thead>
+					<tbody className='w-products__prices--table--body'>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>1 Gallon</th>
+							<td className='w-products__prices--table--row--bpa '>$3 &#40;BPA Free $5&#41;</td>
+							<td className='w-products__prices--table--row__empty' />
+							<td className='w-products__prices--table--row__empty' />
+						</tr>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>2 Gallon</th>
+							<td>$20</td>
+							<td>$11</td>
+							<td>$11</td>
+						</tr>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>3 Gallon</th>
+							<td>$12</td>
+							<td>$14</td>
+							<td>$14</td>
+						</tr>
+						<tr className='w-products__prices--table--row'>
+							<th className='w-products__prices--table--row__head'>5 Gallon</th>
+							<td>$15</td>
+							<td>$17</td>
+							<td>$20 &#40;Wide&#41;</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 	);
 };

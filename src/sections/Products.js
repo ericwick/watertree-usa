@@ -254,7 +254,7 @@ const Products = () => {
 						</tr>
 						<tr className='w-products__prices--table--row'>
 							<th className='w-products__prices--table--row__head'>2 Gallon</th>
-							<td>$20</td>
+							<td>$9</td>
 							<td>$11</td>
 							<td>$11</td>
 						</tr>

@@ -9,8 +9,6 @@
 
         &__subtitle {
             color: #192e6a;
-            font-size: 1.3rem;
-            font-weight: 900;
             margin: 0 2rem;
             font-family: "Libre Baskerville", serif;
             text-align: center;
@@ -277,6 +275,17 @@
     }
 }
 
+#premium {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin: 0.5rem 0;
+}
+#bulk {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
 @media screen and (min-width: 1200px) {
     .w-water {
         display: flex;
@@ -288,8 +297,6 @@
 
         &__subtitle {
             color: #192e6a;
-            font-size: 1.3rem;
-            font-weight: 900;
             margin: 0 2rem;
             font-family: "Libre Baskerville", serif;
             text-align: center;
@@ -569,8 +576,6 @@
 
         &__subtitle {
             color: #192e6a;
-            font-size: 1.3rem;
-            font-weight: 900;
             margin: 0 2rem;
             font-family: "Libre Baskerville", serif;
             text-align: center;

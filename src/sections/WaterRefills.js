@@ -64,10 +64,10 @@ export default class WaterSection extends React.Component {
                                     2 Gallon
                                 </th>
                                 <td className="w-dropdown">
-                                    <select className="w-dropdown__select">
-                                        <option>$9</option>
-                                        <option>Spout or Handle - $11</option>
-                                    </select>
+                                    <div className="w-dropdown__select">
+                                        <p>$9</p>
+                                        <p>Spout or Handle - $11</p>
+                                    </div>
                                 </td>
                             </tr>
                             <tr className="w-products__prices--table--row">
@@ -75,10 +75,10 @@ export default class WaterSection extends React.Component {
                                     3 Gallon
                                 </th>
                                 <td className="w-dropdown">
-                                    <select className="w-dropdown__select">
-                                        <option>$12</option>
-                                        <option>Spout or Handle - $14</option>
-                                    </select>
+                                    <div className="w-dropdown__select">
+                                        <p>$12</p>
+                                        <p>Spout or Handle - $14</p>
+                                    </div>
                                 </td>
                             </tr>
                             <tr className="w-products__prices--table--row">
@@ -86,11 +86,11 @@ export default class WaterSection extends React.Component {
                                     5 Gallon
                                 </th>
                                 <td className="w-dropdown">
-                                    <select className="w-dropdown__select">
-                                        <option>$15</option>
-                                        <option>Spout - $17</option>
-                                        <option>Wide Handle - $20</option>
-                                    </select>
+                                    <div className="w-dropdown__select">
+                                        <p>$15</p>
+                                        <p>Spout - $17</p>
+                                        <p>Wide Handle - $20</p>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -101,9 +101,10 @@ export default class WaterSection extends React.Component {
                 <div className="w-cases__container">
                     <li>
                         <i class="fas fa-tint fa-2x blue" />
-                        <p className="w-water__subtitle">
-                            <span>24 pack of Premium Water Bottles - $24</span>
-                        </p>
+                        <div className="w-water__subtitle">
+                            <p  id="premium">24 pack of Premium Water Bottles - $24</p>
+                            <p id="bulk">*Contact for bulk &#40;5+&#41; pricing</p>
+                        </div>
                     </li>
                 </div>
 

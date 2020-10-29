@@ -66,7 +66,7 @@ export default class WaterSection extends React.Component {
                                 <td className="w-dropdown">
                                     <select className="w-dropdown__select">
                                         <option>$9</option>
-                                        <option>Spout or Handle - $14</option>
+                                        <option>Spout or Handle - $11</option>
                                     </select>
                                 </td>
                             </tr>

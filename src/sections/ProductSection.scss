@@ -1,118 +1,118 @@
 @media screen and (max-width: 750px) {
-    .w-product {
-        background-color: lightblue;
-        padding: 2rem;
+	.w-product {
+		background-color: lightblue;
+		padding: 2rem;
 
-        &__our-products {
-            color: #192e6a;
-            font-size: 1.5rem;
-            font-family: "Libre Baskerville", serif;
-            border-bottom: 0.1rem solid #192e6a;
-            padding-bottom: 1rem;
-            text-align: center;
+		&__our-products {
+			color: #192e6a;
+			font-size: 1.5rem;
+			font-family: 'Libre Baskerville', serif;
+			border-bottom: 0.1rem solid #192e6a;
+			padding-bottom: 1rem;
+			text-align: center;
 
-            &--paragraph {
-                text-align: center;
-                font-size: 1.1rem;
-                font-family: "Lato", sans-serif;
-                color: #19155c;
-                line-height: 1.55rem;
-            }
-        }
+			&--paragraph {
+				text-align: center;
+				font-size: 1.1rem;
+				font-family: 'Lato', sans-serif;
+				color: #19155c;
+				line-height: 1.55rem;
+			}
+		}
 
-        &__disclaimer {
-            text-align: center;
-            font-size: 0.25rem;
-            color: #19155c;
-            font-family: "Lato", sans-serif;
-        }
-    }
+		&__disclaimer {
+			text-align: center;
+			font-size: 0.25rem;
+			color: #19155c;
+			font-family: 'Lato', sans-serif;
+		}
+	}
 
-    .horizontal-divider {
-        color: #19155c;
-    }
+	.horizontal-divider {
+		color: #19155c;
+	}
 }
 
 @media screen and (min-width: 1200px) {
-    .w-product {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: lightblue;
-        padding: 7rem 7rem 0;
+	.w-product {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: lightblue;
+		padding: 2rem 7rem 0;
 
-        &__our-products {
-            color: #192e6a;
-            font-size: 2rem;
-            font-family: "Libre Baskerville", serif;
-            border-bottom: 0.1rem solid #192e6a;
-            padding-bottom: 1rem;
-            text-align: center;
+		&__our-products {
+			color: #192e6a;
+			font-size: 2rem;
+			font-family: 'Libre Baskerville', serif;
+			border-bottom: 0.1rem solid #192e6a;
+			padding-bottom: 1rem;
+			text-align: center;
 
-            &--paragraph {
-                font-size: 1.25rem;
-                font-family: "Lato", sans-serif;
-                text-align: center;
-                color: #19155c;
-                padding: 0 3rem;
-                line-height: 1.25;
-            }
-        }
+			&--paragraph {
+				font-size: 1.25rem;
+				font-family: 'Lato', sans-serif;
+				text-align: center;
+				color: #19155c;
+				padding: 0 3rem;
+				line-height: 1.25;
+			}
+		}
 
-        &__disclaimer {
-            text-align: center;
-            font-size: 0.25rem;
-            color: #19155c;
-            line-height: 0.5rem;
-            font-family: "Lato", sans-serif;
-        }
-    }
+		&__disclaimer {
+			text-align: center;
+			font-size: 0.25rem;
+			color: #19155c;
+			line-height: 0.5rem;
+			font-family: 'Lato', sans-serif;
+		}
+	}
 
-    .horizontal-divider {
-        width: 20rem;
-        color: #19155c;
-    }
+	.horizontal-divider {
+		width: 20rem;
+		color: #19155c;
+	}
 }
 
 @media screen and (max-width: 1199px) and (min-width: 751px) {
-    .w-product {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: lightblue;
-        padding: 7rem 0 0;
+	.w-product {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: lightblue;
+		padding: 2rem 0 0;
 
-        &__our-products {
-            color: #192e6a;
-            font-size: 2rem;
-            font-family: "Libre Baskerville", serif;
-            border-bottom: 0.1rem solid #19155c;
-            padding-bottom: 1rem;
-            text-align: center;
+		&__our-products {
+			color: #192e6a;
+			font-size: 2rem;
+			font-family: 'Libre Baskerville', serif;
+			border-bottom: 0.1rem solid #19155c;
+			padding-bottom: 1rem;
+			text-align: center;
 
-            &--paragraph {
-                font-size: 1.25rem;
-                font-family: "Lato", sans-serif;
-                text-align: center;
-                color: #19155c;
-                padding: 0 2rem;
-                line-height: 1.25;
-            }
-        }
+			&--paragraph {
+				font-size: 1.25rem;
+				font-family: 'Lato', sans-serif;
+				text-align: center;
+				color: #19155c;
+				padding: 0 2rem;
+				line-height: 1.25;
+			}
+		}
 
-        &__disclaimer {
-            text-align: center;
-            font-size: 0.25rem;
-            color: #19155c;
-            line-height: 0.5rem;
-            font-family: "Lato", sans-serif;
-        }
-    }
+		&__disclaimer {
+			text-align: center;
+			font-size: 0.25rem;
+			color: #19155c;
+			line-height: 0.5rem;
+			font-family: 'Lato', sans-serif;
+		}
+	}
 
-    .horizontal-divider {
-        width: 20rem;
-        color: #19155c;
-    }
+	.horizontal-divider {
+		width: 20rem;
+		color: #19155c;
+	}
 }

@@ -24,11 +24,17 @@ const Title = (props) => {
 					<span className='w-title__title--usa'> U.S.A.</span>
 					<i className='fas fa-slash rotate' />
 				</div>
-				<span className='w-title__title--alkaline'>Alkaline Antioxidant Water</span>
-				<span className='w-title__title--best'>THE BEST ALKALINE WATER IN THE DALLAS – FORT WORTH METROPLEX!!!</span>
+				<span className='w-title__title--alkaline'>
+					Alkaline Antioxidant Water
+				</span>
+				<span className='w-title__title--best'>
+					THE BEST ALKALINE WATER IN THE DALLAS – FORT WORTH METROPLEX!!!
+				</span>
 			</div>
 			{navStatus === 'home-nav' ? (
-				<Collapse in={navStatus === 'home-nav' ? true : false} collapsedHeight='40px'>
+				<Collapse
+					in={navStatus === 'home-nav' ? true : false}
+					collapsedSize='40px'>
 					<HomeNav sections={sections} setNavBarLinks={setNavBarLinks} />
 				</Collapse>
 			) : null}

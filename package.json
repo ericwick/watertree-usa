@@ -1,7 +1,6 @@
 {
 	"name": "watertree-usa",
 	"version": "1.1.2",
-	"homepage": "watertreeusa.surge.sh",
 	"private": true,
 	"dependencies": {
 		"@material-ui/core": "^4.5.0",

@@ -17,193 +17,175 @@ import Footer from '../sections/Footer';
 import './WaterTree.scss';
 
 export default class Section extends React.Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			navStatus: 'home-nav',
-			sections: [
-				{
-					name: 'title',
-					section: <Title />
-				},
-				{
-					name: 'products',
-					section: <ProductSection />
-				},
-				{
-					name: 'about',
-					section: <About />
-				},
-				{
-					name: 'contact',
-					section: <Contact />
-				}
-			]
-		};
-		this.scrollToTop = this.scrollToTop.bind(this);
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      navStatus: 'home-nav',
+      sections: [
+        {
+          name: 'title',
+          section: <Title />
+        },
+        {
+          name: 'products',
+          section: <ProductSection />
+        },
+        {
+          name: 'about',
+          section: <About />
+        },
+        {
+          name: 'contact',
+          section: <Contact />
+        }
+      ]
+    };
+    this.scrollToTop = this.scrollToTop.bind(this);
+  }
 
-	componentDidMount() {
-		window.addEventListener('scroll', this.fireOnScroll, true);
-		Events.scrollEvent.register('begin', function () {
-			console.log('begin', arguments);
-		});
+  componentDidMount() {
+    window.addEventListener('scroll', this.fireOnScroll, true);
+    Events.scrollEvent.register('begin', function () {
+      console.log('begin', arguments);
+    });
 
-		Events.scrollEvent.register('end', function () {
-			console.log('end', arguments);
-		});
-	}
+    Events.scrollEvent.register('end', function () {
+      console.log('end', arguments);
+    });
+  }
 
-	fireOnScroll = () => {
-		let { navStatus } = this.state;
-		let winHeight = window.innerHeight;
+  fireOnScroll = () => {
+    let { navStatus } = this.state;
+    let value = document.documentElement.scrollTop;
 
-		let body = document.body;
-		let html = document.documentElement;
-		let docHeight = Math.max(
-			body.scrollHeight,
-			body.offsetHeight,
-			html.clientHeight,
-			html.scrollHeight,
-			html.offsetHeight
-		);
+    if (navStatus === 'home-nav' && value > 150) {
+      this.setState({
+        navStatus: 'nav'
+      });
+    } else if (value <= 150) {
+      this.setState({
+        navStatus: 'home-nav'
+      });
+    }
+  };
 
-		let value = document.documentElement.scrollTop,
-			max,
-			// eslint-disable-next-line
-			percent;
+  scrollToTop() {
+    animateScroll.scrollToTop();
+  }
 
-		max = docHeight - winHeight;
-		percent = (value / max) * 100;
+  scrollTo(offset) {
+    scroller.scrollTo('scroll-to-element', {
+      duration: 800,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+      offset: offset
+    });
+  }
 
-		if (navStatus === 'home-nav' && value > 150) {
-			this.setState({
-				navStatus: 'nav'
-			});
-		} else if (value <= 150) {
-			this.setState({
-				navStatus: 'home-nav'
-			});
-		}
-	};
+  scrollToWithContainer() {
+    let goToContainer = new Promise((resolve, reject) => {
+      Events.scrollEvent.register('end', () => {
+        resolve();
+        Events.scrollEvent.remove('end');
+      });
 
-	scrollToTop() {
-		animateScroll.scrollToTop();
-	}
+      scroller.scrollTo('scroll-container', {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart'
+      });
+    });
 
-	scrollTo(offset) {
-		scroller.scrollTo('scroll-to-element', {
-			duration: 800,
-			delay: 0,
-			smooth: 'easeInOutQuart',
-			offset: offset
-		});
-	}
+    goToContainer.then(() =>
+      scroller.scrollTo('scroll-container-second-element', {
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart',
+        containerId: 'scroll-container'
+      })
+    );
+  }
 
-	scrollToWithContainer() {
-		let goToContainer = new Promise((resolve, reject) => {
-			Events.scrollEvent.register('end', () => {
-				resolve();
-				Events.scrollEvent.remove('end');
-			});
+  setNavBarLinks(link) {
+    switch (link) {
+      case 'title':
+        return 'HOME';
+      case 'products':
+        return 'WATER & REFILLS';
+      case 'about':
+        return 'ABOUT US';
+      case 'contact':
+        return 'FIND US';
+      default:
+        return;
+    }
+  }
 
-			scroller.scrollTo('scroll-container', {
-				duration: 800,
-				delay: 0,
-				smooth: 'easeInOutQuart'
-			});
-		});
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  }
 
-		goToContainer.then(() =>
-			scroller.scrollTo('scroll-container-second-element', {
-				duration: 800,
-				delay: 0,
-				smooth: 'easeInOutQuart',
-				containerId: 'scroll-container'
-			})
-		);
-	}
+  render() {
+    const { sections, navStatus } = this.state;
 
-	setNavBarLinks(link) {
-		switch (link) {
-			case 'title':
-				return 'HOME';
-			case 'products':
-				return 'WATER & REFILLS';
-			case 'about':
-				return 'ABOUT US';
-			case 'contact':
-				return 'FIND US';
-			default:
-				return;
-		}
-	}
+    return (
+      <div>
+        {navStatus === 'nav' ? (
+          <nav className='navbar' onClick={this.scrollToTop}>
+            <img className='navbar__logo' src={logo} alt='logo' />
+            <div className='navbar__links'>
+              {sections.map((e, i) => {
+                return (
+                  <Link
+                    key={i}
+                    className='navbar__links--link'
+                    to={e.name}
+                    spy={true}
+                    smooth={true}
+                    duration={500}>
+                    {this.setNavBarLinks(e.name)}
+                  </Link>
+                );
+              })}
+            </div>
+            <div className='navbar__social-media'>
+              <a
+                href='https://www.instagram.com/watertreeusa/'
+                className='navbar__social-media--link'>
+                <i className='navbar__social-media--app fab fa-instagram blue fa-lg' />
+              </a>
+              <a
+                href='https://www.facebook.com/watertreeusa/'
+                className='navbar__social-media--link'>
+                <i className='navbar__social-media--app fab fa-facebook-square blue fa-lg' />
+              </a>
+            </div>
+          </nav>
+        ) : null}
 
-	componentWillUnmount() {
-		Events.scrollEvent.remove('begin');
-		Events.scrollEvent.remove('end');
-	}
+        <Element name='title' id='title'>
+          <Title
+            navStatus={navStatus}
+            sections={sections}
+            setNavBarLinks={this.setNavBarLinks}
+          />
+        </Element>
 
-	render() {
-		const { sections, navStatus } = this.state;
+        <Element id='about' name='about'>
+          <About />
+        </Element>
 
-		return (
-			<div>
-				{navStatus === 'nav' ? (
-					<nav className='navbar' onClick={this.scrollToTop}>
-						<img className='navbar__logo' src={logo} alt='logo' />
-						<div className='navbar__links'>
-							{sections.map((e, i) => {
-								return (
-									<Link
-										key={i}
-										className='navbar__links--link'
-										to={e.name}
-										spy={true}
-										smooth={true}
-										duration={500}>
-										{this.setNavBarLinks(e.name)}
-									</Link>
-								);
-							})}
-						</div>
-						<div className='navbar__social-media'>
-							<a
-								href='https://www.instagram.com/watertreeusa/'
-								className='navbar__social-media--link'>
-								<i className='navbar__social-media--app fab fa-instagram blue fa-lg' />
-							</a>
-							<a
-								href='https://www.facebook.com/watertreeusa/'
-								className='navbar__social-media--link'>
-								<i className='navbar__social-media--app fab fa-facebook-square blue fa-lg' />
-							</a>
-						</div>
-					</nav>
-				) : null}
+        <Element id='products' name='products'>
+          <ProductSection />
+        </Element>
 
-				<Element name='title' id='title'>
-					<Title
-						navStatus={navStatus}
-						sections={sections}
-						setNavBarLinks={this.setNavBarLinks}
-					/>
-				</Element>
+        <Element id='contact' name='contact'>
+          <Contact />
+        </Element>
 
-				<Element id='about' name='about'>
-					<About />
-				</Element>
-
-				<Element id='products' name='products'>
-					<ProductSection />
-				</Element>
-
-				<Element id='contact' name='contact'>
-					<Contact />
-				</Element>
-
-				{navStatus === 'nav' ? <Footer /> : null}
-			</div>
-		);
-	}
+        {navStatus === 'nav' ? <Footer /> : null}
+      </div>
+    );
+  }
 }

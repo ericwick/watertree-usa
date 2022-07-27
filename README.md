@@ -1,6 +1,6 @@
 # Watertree USA
 
-This project was built with React and Sass and is hosted at (https://watertreewebsite.surge.sh/)
+This project was built with React and Sass and was previously hosted at (https://watertreewebsite.surge.sh/) (site no longer active due to business closure).
 
 ## Scripts
 
